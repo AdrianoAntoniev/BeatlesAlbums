@@ -14,7 +14,38 @@
 		B9126690260EBE1A001BEB3B /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B912668F260EBE1A001BEB3B /* Preview Assets.xcassets */; };
 		B9126693260EBE1A001BEB3B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B9126691260EBE1A001BEB3B /* LaunchScreen.storyboard */; };
 		B912669C260EC0FB001BEB3B /* BeatlesAlbum.swift in Sources */ = {isa = PBXBuildFile; fileRef = B912669B260EC0FB001BEB3B /* BeatlesAlbum.swift */; };
+		B9715551260ECC7D0092FF27 /* WidgetKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B9715550260ECC7D0092FF27 /* WidgetKit.framework */; };
+		B9715553260ECC7D0092FF27 /* SwiftUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B9715552260ECC7D0092FF27 /* SwiftUI.framework */; };
+		B9715556260ECC7D0092FF27 /* BeatlesWidget.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9715555260ECC7D0092FF27 /* BeatlesWidget.swift */; };
+		B9715559260ECC820092FF27 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B9715558260ECC820092FF27 /* Assets.xcassets */; };
+		B971555B260ECC820092FF27 /* BeatlesWidget.intentdefinition in Sources */ = {isa = PBXBuildFile; fileRef = B9715557260ECC7D0092FF27 /* BeatlesWidget.intentdefinition */; };
+		B971555C260ECC820092FF27 /* BeatlesWidget.intentdefinition in Sources */ = {isa = PBXBuildFile; fileRef = B9715557260ECC7D0092FF27 /* BeatlesWidget.intentdefinition */; };
+		B971555F260ECC820092FF27 /* BeatlesWidgetExtension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = B971554E260ECC7D0092FF27 /* BeatlesWidgetExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		B971555D260ECC820092FF27 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B912667B260EBE19001BEB3B /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = B971554D260ECC7D0092FF27;
+			remoteInfo = BeatlesWidgetExtension;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		B9715563260ECC820092FF27 /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				B971555F260ECC820092FF27 /* BeatlesWidgetExtension.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		B9126683260EBE19001BEB3B /* BeatlesList.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BeatlesList.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -27,6 +58,13 @@
 		B9126694260EBE1A001BEB3B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B912669B260EC0FB001BEB3B /* BeatlesAlbum.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BeatlesAlbum.swift; sourceTree = "<group>"; };
 		B9715548260ECB2E0092FF27 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		B971554E260ECC7D0092FF27 /* BeatlesWidgetExtension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = BeatlesWidgetExtension.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		B9715550260ECC7D0092FF27 /* WidgetKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WidgetKit.framework; path = System/Library/Frameworks/WidgetKit.framework; sourceTree = SDKROOT; };
+		B9715552260ECC7D0092FF27 /* SwiftUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftUI.framework; path = System/Library/Frameworks/SwiftUI.framework; sourceTree = SDKROOT; };
+		B9715555260ECC7D0092FF27 /* BeatlesWidget.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BeatlesWidget.swift; sourceTree = "<group>"; };
+		B9715557260ECC7D0092FF27 /* BeatlesWidget.intentdefinition */ = {isa = PBXFileReference; lastKnownFileType = file.intentdefinition; path = BeatlesWidget.intentdefinition; sourceTree = "<group>"; };
+		B9715558260ECC820092FF27 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		B971555A260ECC820092FF27 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -37,6 +75,15 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		B971554B260ECC7D0092FF27 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B9715553260ECC7D0092FF27 /* SwiftUI.framework in Frameworks */,
+				B9715551260ECC7D0092FF27 /* WidgetKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -44,6 +91,8 @@
 			isa = PBXGroup;
 			children = (
 				B9126685260EBE19001BEB3B /* BeatlesList */,
+				B9715554260ECC7D0092FF27 /* BeatlesWidget */,
+				B971554F260ECC7D0092FF27 /* Frameworks */,
 				B9126684260EBE19001BEB3B /* Products */,
 			);
 			sourceTree = "<group>";
@@ -52,6 +101,7 @@
 			isa = PBXGroup;
 			children = (
 				B9126683260EBE19001BEB3B /* BeatlesList.app */,
+				B971554E260ECC7D0092FF27 /* BeatlesWidgetExtension.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -80,6 +130,26 @@
 			path = "Preview Content";
 			sourceTree = "<group>";
 		};
+		B971554F260ECC7D0092FF27 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				B9715550260ECC7D0092FF27 /* WidgetKit.framework */,
+				B9715552260ECC7D0092FF27 /* SwiftUI.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		B9715554260ECC7D0092FF27 /* BeatlesWidget */ = {
+			isa = PBXGroup;
+			children = (
+				B9715555260ECC7D0092FF27 /* BeatlesWidget.swift */,
+				B9715557260ECC7D0092FF27 /* BeatlesWidget.intentdefinition */,
+				B9715558260ECC820092FF27 /* Assets.xcassets */,
+				B971555A260ECC820092FF27 /* Info.plist */,
+			);
+			path = BeatlesWidget;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -90,15 +160,34 @@
 				B912667F260EBE19001BEB3B /* Sources */,
 				B9126680260EBE19001BEB3B /* Frameworks */,
 				B9126681260EBE19001BEB3B /* Resources */,
+				B9715563260ECC820092FF27 /* Embed App Extensions */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				B971555E260ECC820092FF27 /* PBXTargetDependency */,
 			);
 			name = BeatlesList;
 			productName = BeatlesList;
 			productReference = B9126683260EBE19001BEB3B /* BeatlesList.app */;
 			productType = "com.apple.product-type.application";
+		};
+		B971554D260ECC7D0092FF27 /* BeatlesWidgetExtension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B9715560260ECC820092FF27 /* Build configuration list for PBXNativeTarget "BeatlesWidgetExtension" */;
+			buildPhases = (
+				B971554A260ECC7D0092FF27 /* Sources */,
+				B971554B260ECC7D0092FF27 /* Frameworks */,
+				B971554C260ECC7D0092FF27 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = BeatlesWidgetExtension;
+			productName = BeatlesWidgetExtension;
+			productReference = B971554E260ECC7D0092FF27 /* BeatlesWidgetExtension.appex */;
+			productType = "com.apple.product-type.app-extension";
 		};
 /* End PBXNativeTarget section */
 
@@ -110,6 +199,9 @@
 				LastUpgradeCheck = 1240;
 				TargetAttributes = {
 					B9126682260EBE19001BEB3B = {
+						CreatedOnToolsVersion = 12.4;
+					};
+					B971554D260ECC7D0092FF27 = {
 						CreatedOnToolsVersion = 12.4;
 					};
 				};
@@ -128,6 +220,7 @@
 			projectRoot = "";
 			targets = (
 				B9126682260EBE19001BEB3B /* BeatlesList */,
+				B971554D260ECC7D0092FF27 /* BeatlesWidgetExtension */,
 			);
 		};
 /* End PBXProject section */
@@ -143,6 +236,14 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		B971554C260ECC7D0092FF27 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B9715559260ECC820092FF27 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -150,6 +251,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B971555C260ECC820092FF27 /* BeatlesWidget.intentdefinition in Sources */,
 				B9126687260EBE19001BEB3B /* AppDelegate.swift in Sources */,
 				B9126689260EBE19001BEB3B /* SceneDelegate.swift in Sources */,
 				B912669C260EC0FB001BEB3B /* BeatlesAlbum.swift in Sources */,
@@ -157,7 +259,24 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		B971554A260ECC7D0092FF27 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B9715556260ECC7D0092FF27 /* BeatlesWidget.swift in Sources */,
+				B971555B260ECC820092FF27 /* BeatlesWidget.intentdefinition in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		B971555E260ECC820092FF27 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = B971554D260ECC7D0092FF27 /* BeatlesWidgetExtension */;
+			targetProxy = B971555D260ECC820092FF27 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		B9126691260EBE1A001BEB3B /* LaunchScreen.storyboard */ = {
@@ -290,6 +409,7 @@
 		B9126698260EBE1A001BEB3B /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
@@ -311,6 +431,7 @@
 		B9126699260EBE1A001BEB3B /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
@@ -324,6 +445,48 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "Adriano-Rodrigues-Vieira.BeatlesList";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		B9715561260ECC820092FF27 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 2D9YSKR59P;
+				INFOPLIST_FILE = BeatlesWidget/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "Adriano-Rodrigues-Vieira.BeatlesList.BeatlesWidget";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		B9715562260ECC820092FF27 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 2D9YSKR59P;
+				INFOPLIST_FILE = BeatlesWidget/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "Adriano-Rodrigues-Vieira.BeatlesList.BeatlesWidget";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -346,6 +509,15 @@
 			buildConfigurations = (
 				B9126698260EBE1A001BEB3B /* Debug */,
 				B9126699260EBE1A001BEB3B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B9715560260ECC820092FF27 /* Build configuration list for PBXNativeTarget "BeatlesWidgetExtension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B9715561260ECC820092FF27 /* Debug */,
+				B9715562260ECC820092FF27 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
