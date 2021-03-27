@@ -26,6 +26,7 @@
 		B9126692260EBE1A001BEB3B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		B9126694260EBE1A001BEB3B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B912669B260EC0FB001BEB3B /* BeatlesAlbum.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BeatlesAlbum.swift; sourceTree = "<group>"; };
+		B9715548260ECB2E0092FF27 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -66,6 +67,7 @@
 				B9126694260EBE1A001BEB3B /* Info.plist */,
 				B912668E260EBE1A001BEB3B /* Preview Content */,
 				B912669B260EC0FB001BEB3B /* BeatlesAlbum.swift */,
+				B9715548260ECB2E0092FF27 /* README.md */,
 			);
 			path = BeatlesList;
 			sourceTree = "<group>";
